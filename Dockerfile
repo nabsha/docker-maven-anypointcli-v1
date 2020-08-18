@@ -22,6 +22,7 @@ RUN echo "deb https://dl.yarnpkg.com/debian/ stable main" | tee /etc/apt/sources
 RUN apt-get update -qq && apt-get install -qq --no-install-recommends \
   nodejs \
   yarn \
+  jq \
   && rm -rf /var/lib/apt/lists/*
 
 RUN npm install -g anypoint-cli@3.4.3
