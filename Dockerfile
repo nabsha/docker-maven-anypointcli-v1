@@ -23,8 +23,10 @@ RUN apt-get update -qq && apt-get install -qq --no-install-recommends \
   nodejs \
   yarn \
   jq \
+  gettext-base \
   && rm -rf /var/lib/apt/lists/*
 
 RUN npm install -g anypoint-cli@3.4.3
 
 CMD [ "anypoint-cli" ]
+
