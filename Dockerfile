@@ -28,5 +28,7 @@ RUN apt-get update -qq && apt-get install -qq --no-install-recommends \
 
 RUN npm install -g anypoint-cli@3.4.3
 
+RUN curl -sL https://aka.ms/InstallAzureCLIDeb | bash
+
 CMD [ "anypoint-cli" ]
 
